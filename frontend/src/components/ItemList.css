@@ -1,0 +1,104 @@
+.item-list {
+  padding: 20px;
+}
+
+.item-list__title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.item-list__container {
+  display: grid;
+  gap: 20px;
+}
+
+.item-list__item {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.item-list__item.deleting {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.item-list__item-title {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.item-list__item-description {
+  margin: 0 0 15px 0;
+  color: #666;
+}
+
+.item-list__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.item-list__edit-button,
+.item-list__delete-button,
+.item-list__save-button,
+.item-list__cancel-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.item-list__edit-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.item-list__delete-button {
+  background-color: #dc3545;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.item-list__delete-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.item-list__save-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.item-list__cancel-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.item-list__edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-list__edit-input,
+.item-list__edit-textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.item-list__edit-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.item-list__edit-buttons {
+  display: flex;
+  gap: 10px;
+}
